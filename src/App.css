@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+/**/
+
+h1 {
+  font-size: 30px;
+  background: linear-gradient(to right, #f700ff, #00ff95);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box {
+  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img-preview {
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.col {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.copyBtn {
+  margin-left: 10px;
+  background-color: #c4c4c4;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.copyBtn:hover {
+  background-color: #aaaaaa;
 }
+
+.getFullBtn, .getPartBtn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.getFullBtn {
+  background-color: #99AFFF;
+}
+
+.getFullBtn:hover {
+  background-color: #86A1FF;
+}
+
+.getPartBtn {
+  background-color: #61E0BA;
+}
+
+.getPartBtn:hover {
+  background-color: #26E1A9;
+}
+
+/**/

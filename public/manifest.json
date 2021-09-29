@@ -1,25 +1,32 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+  "manifest_version": 3,
+
+  "name": "ShareShot",
+  "description": "Easily share your full page screenshots or any part of it",
+  "version": "0.0.1",
+  "action": {
+
+  },
+  "background": {
+    "service_worker": "./background.js"
+  },
+  "icons": {
+    "16": "ShareShot-16.png",
+    "48": "ShareShot-48.png",
+    "128": "ShareShot-128.png"
+  },
+  "commands": {
+    "capture": {
+      "suggested_key": "Alt+Shift+Z",
+      "description": "Opens ShareShot page to customize and share screenshot"
     }
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "host_permissions": [
+    "https://api.imgur.com/3/upload"
+  ]
 }
